@@ -1,0 +1,18 @@
+.chat {
+  background: #228b22 url(../img/chat-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.chat__content {
+  display: flex;
+  flex-direction: column;
+}
+.chat__item {
+  display: flex;
+  width: 100%;
+}
+.chat__message {
+  width: 80%;
+  border-right: 20px;
+  background-color: #fff;
+}
