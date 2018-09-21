@@ -1,7 +1,10 @@
 @import "vars";
 @import "mixins";
+@import "utils/btn";
 @import "page/layout";
 @import "blocks/chat";
+@import "blocks/chat-footer";
+@import "utils/devider-date";
 
 html {
   font-family: $default-font;
@@ -11,6 +14,13 @@ html {
 
 body {
   background-color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNovaCond-Bold.ttf');
 }
 
 *, *:before, *:after, a {
@@ -47,7 +57,6 @@ select,
 textarea {
   font-family: $default-font; /* 1 */
   font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
 

@@ -1,0 +1,20 @@
+.devider-date {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 246px;
+    height: 1px;
+    background-color: #fff;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
