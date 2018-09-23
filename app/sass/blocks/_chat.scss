@@ -39,6 +39,9 @@
   height: 50px;
   margin-right: 18px;
   margin-left: 12px;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  object-fit: cover;
 }
 
 #pentagon {
