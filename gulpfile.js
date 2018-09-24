@@ -35,12 +35,22 @@ gulp.task('html', function() {
 		.pipe(gulp.dest('dist'));
 });
 
+gulp.task("images", function() {
+  return gulp.src("app/img/**/*.{png,jpg,gif}")
+    .pipe(gulp.dest("dist/img"));
+});
+
+gulp.task("fonts", function() {
+  return gulp.src("app/fonts/**/*")
+    .pipe(gulp.dest("dist/fonts"));
+});
+
 gulp.task('watch', ['sass', 'browser-sync'], function () {
     gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 
-gulp.task('build', ['removedist', 'sass', 'html'], function () {
+gulp.task('build', ['removedist', 'sass', 'html', 'images', 'fonts'], function () {
     const buildCss = gulp.src([
         'app/css/main.min.css'
     ]).pipe(gulp.dest('dist/css'));
