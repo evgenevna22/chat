@@ -1,5 +1,6 @@
 .devider-date {
   position: relative;
+  margin-top: -4px;
   margin-bottom: 20px;
   text-align: center;
   &:before,
@@ -7,7 +8,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    width: 246px;
+    width: 248px;
     height: 1px;
     background-color: #fff;
   }
@@ -16,5 +17,6 @@
   }
   &:after {
     right: 0;
+    width: 235px;
   }
 }

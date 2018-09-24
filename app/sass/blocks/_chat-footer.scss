@@ -1,17 +1,16 @@
 .chat-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 41px 0 20px;
+  padding: 20px 39px 0 22px;
   .btn {
-    align-self: flex-start;
+
   }
 }
 .chat__footer-input {
-  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
   padding: 10px 10px 22px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #696969;
   border-radius: 5px;
   border: 1px solid $border-input;
-  color: #696969;
   resize: none;
 }
