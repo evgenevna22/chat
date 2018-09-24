@@ -3,5 +3,5 @@
 
 ### Задачи Gulp
  - `$ gulp` - запуск локального веб-сервера для livereload
- - `$ gulp clean` - очистка каталога `dist/`
- - `$ gulp build` - полная сборка проекта в папку `dist/`
+ - `$ gulp removebuild` - очистка каталога `build/`
+ - `$ gulp build` - полная сборка проекта в папку `build/`
